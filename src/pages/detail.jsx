@@ -1,8 +1,8 @@
 import { useState } from "react";
-import useCustomEffect from "../detail.js";
+import detailTab from "../detail.js";
 
 function Detail() {
-  useCustomEffect();
+  detailTab();
   const [activeIndices, setActiveIndices] = useState([]);
 
   const toggleAccordion = (index) => {
@@ -45,9 +45,19 @@ function Detail() {
         </ul>
         <div className="sideMenu2"></div>
         <div className="detailMain">
-          <div>Test1</div>
-          <div>Test2</div>
-          <div>Test3</div>
+          <div className="detailMainImg">상품이미지</div>
+          <ul className="detailTab">
+            <li className="on">상세정보</li>
+            <li>리뷰</li>
+            <li>Q&A</li>
+            <li>반품/교환정보</li>
+          </ul>
+          <ul className="detailContent">
+            <li className="on">내용1</li>
+            <li>내용2</li>
+            <li>내용3</li>
+            <li>내용4</li>
+          </ul>
         </div>
       </div>
     </>

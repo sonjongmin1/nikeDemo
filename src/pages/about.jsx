@@ -9,7 +9,7 @@ function About() {
   return (
     <div>
       <button
-        onClick={() => {ㅌ
+        onClick={() => {
           setCount(count + 1);
         }}
       >

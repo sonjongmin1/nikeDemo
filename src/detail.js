@@ -1,15 +1,33 @@
 import { useEffect } from "react";
 
-const useCustomEffect = () => {
+let detailTab = function () {
   useEffect(() => {
-    let detailMain = document.querySelectorAll(".detailMain > div");
+    let detailTabEl = document.querySelectorAll(".detailTab > li");
+    let detailContent = document.querySelectorAll(".detailContent > li");
 
-    detailMain.forEach((i) => {
+    detailTabEl.forEach((i, index) => {
       i.addEventListener("click", function () {
-        i.style.backgroundColor = "red";
+        detailTabEl.forEach((el) => {
+          el.classList.remove("on");
+        });
+
+        i.classList.add("on");
+
+        detailContent.forEach((dt) => {
+          dt.classList.remove("on");
+          index == 0
+            ? detailContent[index].classList.add("on")
+            : index == 1
+            ? detailContent[index].classList.add("on")
+            : index == 2
+            ? detailContent[index].classList.add("on")
+            : index == 3
+            ? detailContent[index].classList.add("on")
+            : null;
+        });
       });
     });
   }, []);
 };
 
-export default useCustomEffect;
+export default detailTab;
