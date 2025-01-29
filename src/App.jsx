@@ -59,6 +59,7 @@ function App() {
           element={
             <>
               <Error />
+              <div>{console.log("오류확인")}</div>
             </>
           }
         />
