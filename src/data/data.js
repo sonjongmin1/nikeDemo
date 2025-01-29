@@ -4,7 +4,7 @@ let data = [
     title: "나이키 P-6000 SE",
     content: "남성 신발",
     price: 149000,
-    img: "/img/img1.png",
+    img: "/nikeDemo/img/img1.png",
   },
 
   {
@@ -12,7 +12,7 @@ let data = [
     title: "나이키 에어맥스Dn",
     content: "신발",
     price: 199000,
-    img: "/img/img2.png",
+    img: "/nikeDemo/img/img2.png",
   },
 
   {
@@ -20,7 +20,7 @@ let data = [
     title: "나이키 에어 페가수스 웨이브",
     content: "남성 신발",
     price: 189000,
-    img: "/img/img3.png",
+    img: "/nikeDemo/img/img3.png",
   },
 ];
 

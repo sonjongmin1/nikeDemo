@@ -46,7 +46,7 @@ function middleBar() {
         </div>
       </div>
       <div className="middleLogo">
-        <img src="/img/nikeLogo.png" alt="#" width={"80px"} />
+        <img src="/nikeDemo/img/nikeLogo.png" alt="#" width={"80px"} />
       </div>
       <ul className="middleMenu">
         <li>

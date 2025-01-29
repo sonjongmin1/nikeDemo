@@ -16,7 +16,7 @@ function App() {
     <>
       <Routes>
         <Route
-          path="/"
+          path="/nikeDemo"
           element={
             <>
               <TopBar />
@@ -29,7 +29,7 @@ function App() {
           }
         />
         <Route
-          path="/detail"
+          path="/nikeDemo/detail"
           element={
             <>
               <TopBar />
@@ -42,7 +42,7 @@ function App() {
         라우터의 장점 : 뒤로가기버튼 및 페이지 이동시 유용하게 사용 할 수 있다.
          */}
         <Route
-          path="/about"
+          path="/nikeDemo/about"
           element={
             <>
               <TopBar />
