@@ -5,7 +5,11 @@
     <meta http-equiv="refresh" content="0; URL='/'" />
     <script>
       var path = window.location.pathname;
-      window.location.replace("/nikeDemo" + path);
+
+      // 이미 '/nikeDemo'가 포함되어 있는지 확인
+      if (!path.startsWith("/nikeDemo")) {
+        window.location.replace("/nikeDemo" + path);
+      }
     </script>
   </head>
   <body>
