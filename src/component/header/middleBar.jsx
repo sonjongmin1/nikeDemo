@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 function middleBar() {
   return (
     <header className="middleBar">
@@ -66,6 +68,9 @@ function middleBar() {
         </li>
         <li>
           <a href="#">Sale</a>
+        </li>
+        <li>
+          <NavLink to={"/nikeDemo/detail"}>Detail</NavLink>
         </li>
       </ul>
       <div className="middleIconBox">
