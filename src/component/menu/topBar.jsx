@@ -3,10 +3,14 @@ function TopBar() {
     <header>
       <div className="topBarLogo">
         <div>
-          <img src="/nikeDemo/img/nikeLogoPeple.png" alt="#" width={"35px"} />
+          <img
+            src="../../nikeDemo/img/nikeLogoPeple.png"
+            alt="#"
+            width={"35px"}
+          />
         </div>
         <div>
-          <img src="/nikeDemo/img/arrowLogo.png" alt="#" width={"35px"} />
+          <img src="../../nikeDemo/img/arrowLogo.png" alt="#" width={"35px"} />
         </div>
       </div>
       <ul className="topBarMenu">

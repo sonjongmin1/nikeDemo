@@ -1,64 +1,22 @@
 import "./App.css";
-import { useState } from "react";
-import TopBar from "./component/header/topBar.jsx";
-import MiddleBar from "./component/header/middleBar.jsx";
-import Article from "./component/article/article.jsx";
-import Detail from "./pages/detail.jsx";
-import Error from "./pages/page404.jsx";
-import data from "./data/data.js";
+import TopBar from "./component/menu/topBar.jsx";
+import MiddleBar from "./component/menu/middleBar.jsx";
+import Main from "./pages/main.jsx";
 import { Routes, Route } from "react-router-dom";
-import About from "./pages/about.jsx";
+import "../src/scss/main.scss";
 
 function App() {
-  let [shoes] = useState(data);
-
   return (
     <>
       <Routes>
+        {/* 메인 페이지 */}
         <Route
           path="/nikeDemo"
           element={
             <>
               <TopBar />
               <MiddleBar />
-              <Article shoes={shoes} />
-              <div>
-                <button onClick={() => {}}>데이터 가져오기</button>
-              </div>
-            </>
-          }
-        />
-        <Route
-          path="/nikeDemo/detail"
-          element={
-            <>
-              <TopBar />
-              <MiddleBar />
-              <Detail />
-            </>
-          }
-        />
-        {/* 
-        라우터의 장점 : 뒤로가기버튼 및 페이지 이동시 유용하게 사용 할 수 있다.
-         */}
-        <Route
-          path="/nikeDemo/about"
-          element={
-            <>
-              <TopBar />
-              <MiddleBar />
-              <About />
-            </>
-          }
-        >
-          <Route path="member" element={<div>Member Page</div>} />
-          <Route path="location" element={<div>Location Page</div>} />
-        </Route>
-        <Route
-          path="*"
-          element={
-            <>
-              <Error />
+              <Main />
             </>
           }
         />
