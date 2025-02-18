@@ -2,9 +2,12 @@ import { useEffect } from "react";
 
 const useMenuHid = () => {
   useEffect(() => {
-    const middleBar = document.querySelector(".middleBar");
-    middleBar.addEventListener("click", function () {
-      console.log("Hello");
+    let middleBar = document.querySelector(".middleBar");
+    let midBarHid = document.querySelector(".middleBar-hid");
+    let mainIntro = document.querySelector(".main-intro");
+    middleBar.addEventListener("mouseenter", function () {
+      midBarHid.classList.add("on");
+      mainIntro.classList.add("on");
     });
   }, []);
 };

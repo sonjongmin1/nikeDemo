@@ -1,10 +1,12 @@
 import myVideo from "../video/main-vid1.mp4";
+import useMenuHid from "../js/menu.jsx";
 
 const Main = () => {
+  useMenuHid();
   return (
     <>
       <div className="main-intro">
-        이 사이트는 학습 및 포트폴리오를 위해 제작되었습니다{" "}
+        이 사이트는 학습 및 포트폴리오를 위해 제작되었습니다.
       </div>
       <section className="main">
         <video autoPlay loop muted src={myVideo} />

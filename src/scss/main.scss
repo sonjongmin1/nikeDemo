@@ -18,6 +18,10 @@ $main-pd: 30px;
   background-color: $main-bg;
 }
 
+.main-intro.on {
+  display: none;
+}
+
 .main {
   padding: 0 80px;
 
