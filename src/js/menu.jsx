@@ -9,6 +9,11 @@ const useMenuHid = () => {
       midBarHid.classList.add("on");
       mainIntro.classList.add("on");
     });
+
+    midBarHid.addEventListener("mouseleave", function () {
+      midBarHid.classList.remove("on");
+      mainIntro.classList.remove("on");
+    });
   }, []);
 };
 

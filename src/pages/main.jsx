@@ -1,8 +1,10 @@
 import myVideo from "../video/main-vid1.mp4";
 import useMenuHid from "../js/menu.jsx";
+import btnslide from "../js/slide.jsx";
 
 const Main = () => {
   useMenuHid();
+  btnslide();
   return (
     <>
       <div className="main-intro">
@@ -26,7 +28,32 @@ const Main = () => {
           </div>
         </div>
       </section>
-      <section></section>
+      <section className="main-st1">
+        <div className="main-st1-bg"></div>
+        <div className="main-ep">
+          압도적 쿠션감,
+          <br /> 완벽한 러닝을 구현하다
+        </div>
+        <div>2월 27일 출시</div>
+        <div className="st1-main-btn">알림 받기</div>
+      </section>
+      <section className="main-st2">
+        <div>
+          Trending Now
+          <button id="prev">〈</button>
+          <button id="next">〉</button>
+        </div>
+        <div className="card-lay">
+          <ul className="card-box">
+            <li className="main-img1"></li>
+            <li className="main-img2"></li>
+            <li className="main-img3"></li>
+            <li className="main-img4"></li>
+            <li className="main-img5"></li>
+            <li className="main-img6"></li>
+          </ul>
+        </div>
+      </section>
     </>
   );
 };

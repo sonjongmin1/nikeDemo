@@ -6,13 +6,12 @@ $main-pd: 30px;
 }
 
 @mixin ep {
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 60px;
+  font-weight: bolder;
   padding: 10px;
 }
 
 .main-intro {
-  border: $border;
   text-align: center;
   padding: 15px 0px;
   background-color: $main-bg;
@@ -27,14 +26,12 @@ $main-pd: 30px;
 
   video {
     width: 100%;
-    border: $border;
   }
 
   .main-box1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
     padding: $main-pd;
 
     .main-ep {
@@ -49,7 +46,6 @@ $main-pd: 30px;
     display: flex;
     div {
       margin-top: 10px;
-      border: $border;
       padding: 10px 20px;
       border-radius: 20px;
       background-color: #000;
@@ -59,5 +55,129 @@ $main-pd: 30px;
     div:not(:last-child) {
       margin-right: 30px;
     }
+  }
+}
+
+.main-st1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 80px;
+  .main-st1-bg {
+    width: 100%;
+    height: 415px;
+    background-image: url("/public/img/main-st1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
+  }
+
+  .main-ep {
+    @include ep;
+    text-align: center;
+  }
+
+  .st1-main-btn {
+    margin-top: 10px;
+    border: $border;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+.main-st2 {
+  border: $border;
+  padding: 80px;
+  background-color: skyblue;
+  div:first-child {
+    padding: 0 10px;
+    font-size: 26px;
+    font-weight: bolder;
+  }
+
+  div:first-child {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .card-lay {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    border: $border;
+    background-color: yellow;
+    overflow: hidden;
+  }
+
+  button {
+    position: absolute;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    align-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 40px;
+    background-color: rgb(229, 229, 229);
+    border: none;
+  }
+
+  #prev {
+    right: 40px;
+  }
+
+  #next {
+    right: 0;
+  }
+
+  .card-box {
+    width: 2362px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    border: 1px solid black;
+    transition: 1s;
+  }
+
+  .card-box.on {
+    transform: translateX(-396px);
+  }
+
+  li {
+    width: 385px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  li:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .main-img1 {
+    background-image: url("/public/img/main-img1.png");
+  }
+  .main-img2 {
+    background-image: url("/public/img/main-img2.png");
+  }
+  .main-img3 {
+    background-image: url("/public/img/main-img3.png");
+  }
+  .main-img4 {
+    background-image: url("/public/img/main-img4.png");
+  }
+  .main-img5 {
+    background-image: url("/public/img/main-img5.png");
+  }
+  .main-img6 {
+    background-image: url("/public/img/main-img6.png");
   }
 }

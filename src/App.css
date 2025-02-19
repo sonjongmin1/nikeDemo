@@ -35,7 +35,6 @@ header {
 .middleBar {
   position: relative;
   background-color: #fff;
-  border: 1px solid black;
   z-index: 100;
 }
 
@@ -98,6 +97,7 @@ header {
   opacity: 0;
   background-color: #fff;
   transition: 1s;
+  z-index: 500;
 }
 
 .middleBar-hid.on {
