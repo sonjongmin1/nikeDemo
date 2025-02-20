@@ -1,6 +1,7 @@
 import MenMenu from "../component/menu/menMenu";
 import menVideo from "../video/sub-vid1.mp4";
 import subVid2 from "../video/sub-vid2.mp4";
+import Footer from "../component/footer/footer";
 const Men = () => {
   return (
     <>
@@ -53,6 +54,7 @@ const Men = () => {
           <div className="st1-main-btn">구매하기</div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };

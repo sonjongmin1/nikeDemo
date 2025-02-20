@@ -1,6 +1,7 @@
 import WomenMenu from "../component/menu/WomenMenu";
 import WomenVideo from "../video/sub-vid1.mp4";
 import WomenVideo2 from "../video/sub-vid3.mp4";
+import Footer from "../component/footer/footer";
 const Women = () => {
   return (
     <>
@@ -53,6 +54,7 @@ const Women = () => {
           <div className="st1-main-btn">구매하기</div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };
