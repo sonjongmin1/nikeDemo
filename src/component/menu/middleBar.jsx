@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import useMenuHid from "../../js/menu.jsx";
 
 function middleBar() {
@@ -27,12 +26,6 @@ function middleBar() {
           </li>
           <li>
             <a href="#">Sale</a>
-          </li>
-          <li>
-            <NavLink to={"/nikeDemo/"}>Detail</NavLink>
-          </li>
-          <li>
-            <NavLink to={"/nikeDemo/"}>Cart</NavLink>
           </li>
         </ul>
         <div className="middleIconBox"></div>
