@@ -64,9 +64,9 @@ $main-pd: 30px;
   flex-direction: column;
   padding: 0 80px;
   .main-st1-bg {
-    width: 100%;
+    width: 1186px;
     height: 410px;
-    background-image: url("/public/img/main-st1.png");
+    background-image: url("/img/main-st1.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -251,10 +251,10 @@ $main-pd: 30px;
 
     div:first-child {
       margin-right: 15px;
-      background-image: url("/public/img/main-st4-img1.png");
+      background-image: url("/img/main-st4-img1.png");
     }
     div:nth-child(2) {
-      background-image: url("/public/img/main-st4-img2.png");
+      background-image: url("/img/main-st4-img2.png");
     }
   }
 }
@@ -289,32 +289,32 @@ $main-pd: 30px;
     background-size: cover;
   }
   .wrap .rolling-list ul li:nth-child(1) {
-    background-image: url("/public/img/bn-img1.png");
+    background-image: url("/img/bn-img1.png");
   }
   .wrap .rolling-list ul li:nth-child(2) {
-    background-image: url("/public/img/bn-img2.png");
+    background-image: url("/img/bn-img2.png");
   }
   .wrap .rolling-list ul li:nth-child(3) {
-    background-image: url("/public/img/bn-img3.png");
+    background-image: url("/img/bn-img3.png");
   }
   .wrap .rolling-list ul li:nth-child(4) {
-    background-image: url("/public/img/bn-img4.png");
+    background-image: url("/img/bn-img4.png");
   }
 
   .wrap .rolling-list ul li:nth-child(5) {
-    background-image: url("/public/img/bn-img5.png");
+    background-image: url("/img/bn-img5.png");
   }
 
   .wrap .rolling-list ul li:nth-child(6) {
-    background-image: url("/public/img/bn-img6.png");
+    background-image: url("/img/bn-img6.png");
   }
 
   .wrap .rolling-list ul li:nth-child(7) {
-    background-image: url("/public/img/bn-img7.png");
+    background-image: url("/img/bn-img7.png");
   }
 
   .wrap .rolling-list ul li:nth-child(8) {
-    background-image: url("/public/img/bn-img8.png");
+    background-image: url("/img/bn-img8.png");
   }
 
   .wrap .rolling-list ul li .image-wrap {
@@ -457,7 +457,7 @@ $main-pd: 30px;
       div:nth-child(3) {
         font-size: 20px;
         font-weight: bolder;
-        height: 18%;
+        height: 19%;
         bottom: 0;
       }
       div:nth-child(4) {
@@ -470,7 +470,7 @@ $main-pd: 30px;
         background-color: #000;
         color: #fff;
         border-radius: 100px;
-        bottom: 5px;
+        bottom: 13px;
       }
     }
 
@@ -478,19 +478,19 @@ $main-pd: 30px;
       margin-right: 0;
     }
     .main-img1 {
-      background-image: url("/public/img/main-st6-img1.png");
+      background-image: url("/img/main-st6-img1.png");
     }
     .main-img2 {
-      background-image: url("/public/img/main-st6-img2.png");
+      background-image: url("/img/main-st6-img2.png");
     }
     .main-img3 {
-      background-image: url("/public/img/main-st6-img3.png");
+      background-image: url("/img/main-st6-img3.png");
     }
     .main-img4 {
-      background-image: url("/public/img/main-st6-img4.png");
+      background-image: url("/img/main-st6-img4.png");
     }
     .main-img5 {
-      background-image: url("/public/img/main-st6-img5.png");
+      background-image: url("/img/main-st6-img5.png");
     }
   }
 }
@@ -578,7 +578,7 @@ $main-pd: 30px;
     .earth-ic {
       width: 20px;
       height: 20px;
-      background-image: url(/public/img/earth-ic.svg);
+      background-image: url("/img/earth-ic.svg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -614,5 +614,31 @@ $main-pd: 30px;
   }
   div:first-child {
     margin-right: 30px;
+  }
+}
+
+// main 페이지 끝
+
+// men 페이지 시작
+.mw-menu {
+  div {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  div:last-child {
+    opacity: 0;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px 30px 80px;
+
+  ul {
+    display: flex;
+    li {
+      font-size: 14px;
+      padding: 0px 10px 0 10px;
+      font-weight: 600;
+    }
   }
 }

@@ -1,31 +1,31 @@
 import useMenuHid from "../../js/menu.jsx";
+import { NavLink } from "react-router-dom";
 
 function middleBar() {
   useMenuHid();
   return (
     <>
       <header className="middleBar">
-        <div className="middleLogo">
-          <img src="/nikeDemo/img/nikeLogo.png" alt="#" width={"80px"} />
-        </div>
+        <NavLink to={"/nikeDemo"}>
+          <div className="middleLogo">
+            <img src="/nikeDemo/img/nikeLogo.png" alt="#" width={"80px"} />
+          </div>
+        </NavLink>
         <ul className="middleMenu">
           <li>
-            <a href="#">New</a>
+            <NavLink to={"/nikeDemo/new"}>New</NavLink>
           </li>
           <li>
-            <a href="#">Men</a>
+            <NavLink to={"/nikeDemo/men"}>Men</NavLink>
           </li>
           <li>
-            <a href="#">Women</a>
+            <NavLink to={"/nikeDemo/women"}>Women</NavLink>
           </li>
           <li>
-            <a href="#">Kids</a>
+            <NavLink to={"/nikeDemo/kids"}>Kids</NavLink>
           </li>
           <li>
-            <a href="#">Jordan</a>
-          </li>
-          <li>
-            <a href="#">Sale</a>
+            <NavLink to={"/nikeDemo/sale"}>Sale</NavLink>
           </li>
         </ul>
         <div className="middleIconBox"></div>
@@ -80,6 +80,9 @@ function middleBar() {
           </ul>
         </li>
       </ul>
+      <div className="main-intro">
+        이 사이트는 학습 및 포트폴리오를 위해 제작되었습니다.
+      </div>
     </>
   );
 }

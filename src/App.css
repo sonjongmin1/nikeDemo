@@ -11,7 +11,7 @@ header {
   display: flex;
 }
 
-.topBarLogo div > img {
+.topBarLogo .topBarLogo div > img {
   position: relative;
   top: 3px;
 }
@@ -33,6 +33,7 @@ header {
 
 /* middleBar St*/
 .middleBar {
+  display: flex;
   position: relative;
   background-color: #fff;
   z-index: 100;
@@ -45,7 +46,6 @@ header {
 .middleMenu {
   display: flex;
   font-weight: bolder;
-  margin-left: 90px;
   z-index: 100;
 }
 
