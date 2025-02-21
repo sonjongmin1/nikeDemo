@@ -1,3 +1,6 @@
+import ProductCard from "../component/product/product";
+import { products } from "../data/data";
+
 const New = () => {
   return (
     <>
@@ -130,7 +133,11 @@ const New = () => {
           </ul>
         </div>
         <div className="pd-box">
-          <div>테스트</div>
+          <div className="pd-box-1">
+            {products.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
         </div>
       </section>
     </>
@@ -138,3 +145,43 @@ const New = () => {
 };
 
 export default New;
+
+/*
+        <div className="pd-box">
+          <div className="pd-box-1">
+            <div>
+              <div className="pd-img pd-img1"></div>
+              <div className="pd-con">
+                <div className="pd-tit">신제품</div>
+                <div className="pd-nm">나이키 V5 PNR</div>
+                <div className="pd-s">남성 신발</div>
+                <div className="pd-s">1개 색상</div>
+                <div>119,000원</div>
+                <div className="pd-sl">추가 10% 할인(CODE:SCHOOL10)</div>
+              </div>
+            </div>
+            <div>
+              <div className="pd-img pd-img1"></div>
+              <div className="pd-con">
+                <div className="pd-tit">신제품</div>
+                <div className="pd-nm">나이키 V5 PNR</div>
+                <div className="pd-s">남성 신발</div>
+                <div className="pd-s">1개 색상</div>
+                <div>119,000원</div>
+                <div className="pd-sl">추가 10% 할인(CODE:SCHOOL10)</div>
+              </div>
+            </div>
+            <div>
+              <div className="pd-img pd-img1"></div>
+              <div className="pd-con">
+                <div className="pd-tit">신제품</div>
+                <div className="pd-nm">나이키 V5 PNR</div>
+                <div className="pd-s">남성 신발</div>
+                <div className="pd-s">1개 색상</div>
+                <div>119,000원</div>
+                <div className="pd-sl">추가 10% 할인(CODE:SCHOOL10)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+*/
