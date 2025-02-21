@@ -249,9 +249,10 @@ $main-pd: 30px;
 
   .card-st4-box {
     display: flex;
+    justify-content: space-between;
 
     div {
-      width: 100%;
+      width: 620px;
       height: 320px;
       background-repeat: no-repeat;
       background-size: cover;
@@ -673,6 +674,7 @@ $main-pd: 30px;
 .men-st3,
 .women-st3 {
   margin-top: 50px;
+  margin-left: 80px;
   .main-box1 {
     display: flex;
     flex-direction: column;
@@ -694,4 +696,12 @@ $main-pd: 30px;
     color: #fff;
     background-color: #000;
   }
+}
+
+#prev3 {
+  right: 80px;
+}
+
+#next3 {
+  right: 0;
 }

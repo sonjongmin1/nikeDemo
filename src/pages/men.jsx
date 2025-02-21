@@ -2,7 +2,10 @@ import MenMenu from "../component/menu/menMenu";
 import menVideo from "../video/sub-vid1.mp4";
 import subVid2 from "../video/sub-vid2.mp4";
 import Footer from "../component/footer/footer";
+import banner from "../js/bannerjs.jsx";
+import Banner from "../component/banner/banner";
 const Men = () => {
+  banner();
   return (
     <>
       <MenMenu />
@@ -52,6 +55,91 @@ const Men = () => {
             매력적인 룩에 프리미엄 소재를 더한 새로운 컬렉션을 소개합니다.
           </div>
           <div className="st1-main-btn">구매하기</div>
+        </div>
+      </section>
+      <section className="main-st2">
+        <div>
+          <span className="main-st2-tit">Trending Now</span>
+          <button id="prev3">〈</button>
+          <button id="next3">〉</button>
+        </div>
+        <div className="card-img-box">
+          <div className="main-img1">
+            <div>조던X파리 생제르맹</div>
+            <div>
+              <a href="#">구매하기</a>
+            </div>
+          </div>
+          <div className="main-img2">
+            <div>나이키 필드 제너럴</div>
+            <div>
+              <a href="#">구매하기</a>
+            </div>
+          </div>
+          <div className="main-img3">
+            <div>나이키 테크</div>
+            <div>
+              <a href="#">구매하기</a>
+            </div>
+          </div>
+          <div className="main-img4">
+            <div>나이키 팬텀 GX 2 "엘링 홀란드"</div>
+            <div>
+              <a href="#">구매하기</a>
+            </div>
+          </div>
+          <div className="main-img5">
+            <div>나이키 줌 플라이 6</div>
+            <div>
+              <a href="#">구매하기</a>
+            </div>
+          </div>
+          <div className="main-img6">
+            <div>에어맥스 Dn8</div>
+            <div>
+              <a href="#">구매하기</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Banner />
+      <section className="main-st6">
+        <div>
+          <span className="main-st6-tit2">나이키 멤버쉽</span>
+          <button id="prev2">〈</button>
+          <button id="next2">〉</button>
+        </div>
+        <div className="card-img-st6-box">
+          <div>
+            <div className="main-img1"></div>
+            <div>대학생 멤버 혜택</div>
+            <div>대학생 할인 프로그램</div>
+            <div>구매하기</div>
+          </div>
+          <div>
+            <div className="main-img2"></div>
+            <div>대학생 멤버 혜택</div>
+            <div>대학생 할인 프로그램</div>
+            <div>구매하기</div>
+          </div>
+          <div>
+            <div className="main-img3"></div>
+            <div>대학생 멤버 혜택</div>
+            <div>대학생 할인 프로그램</div>
+            <div>구매하기</div>
+          </div>
+          <div>
+            <div className="main-img4"></div>
+            <div>대학생 멤버 혜택</div>
+            <div>대학생 할인 프로그램</div>
+            <div>구매하기</div>
+          </div>
+          <div>
+            <div className="main-img5"></div>
+            <div>대학생 멤버 혜택</div>
+            <div>대학생 할인 프로그램</div>
+            <div>구매하기</div>
+          </div>
         </div>
       </section>
       <Footer />

@@ -30,6 +30,7 @@ const btnslide = () => {
     let cardImgBox2 = document.querySelector(".card-img-st6-box");
     let prev2 = document.querySelector("#prev2");
     let next2 = document.querySelector("#next2");
+
     let cardImgWidth2 = cardImgBox2.querySelector("div").offsetWidth + 20;
 
     const slideLeft2 = () => {
