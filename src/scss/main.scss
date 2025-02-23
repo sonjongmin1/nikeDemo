@@ -731,6 +731,32 @@ $main-pd: 30px;
         font-weight: bolder;
       }
 
+      .ar-btn {
+        cursor: pointer;
+        transition: 0.5s;
+      }
+
+      .ar-btn.on {
+        transform: rotate(180deg);
+      }
+
+      .side-menu-de {
+        max-height: 0;
+        transition: 1.5s;
+        li {
+          max-height: 0;
+          opacity: 0;
+        }
+      }
+
+      .side-menu-de.on {
+        max-height: 500px;
+        li {
+          max-height: 500px;
+          opacity: 1;
+        }
+      }
+
       span {
         position: absolute;
         top: 0;

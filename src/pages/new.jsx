@@ -1,7 +1,9 @@
 import ProductCard from "../component/product/product";
-import { products } from "../data/data";
+import { products } from "../data/new";
+import acd from "../js/accordion.jsx";
 
 const New = () => {
+  acd();
   return (
     <>
       <section className="new">
@@ -9,7 +11,7 @@ const New = () => {
           <ul>
             <li className="side-menu-list">
               <a href="#">신제품</a>
-              <ul className="side-menu-de">
+              <ul>
                 <li>신발</li>
                 <li>탑 & 티셔츠</li>
                 <li>후디 & 크루</li>
@@ -23,8 +25,8 @@ const New = () => {
             </li>
             <li className="side-menu-list">
               <a href="#">성별</a>
-              <span>⌃</span>
-              <ul>
+              <span className="ar-btn">⌃</span>
+              <ul className="side-menu-de">
                 <li>남성</li>
                 <li>여성</li>
                 <li>성인공용</li>
@@ -32,16 +34,16 @@ const New = () => {
             </li>
             <li className="side-menu-list">
               <a href="#">키즈</a>
-              <span>⌃</span>
-              <ul>
+              <span className="ar-btn">⌃</span>
+              <ul className="side-menu-de">
                 <li>남아</li>
                 <li>여아</li>
               </ul>
             </li>
             <li className="side-menu-list">
               <a href="#">스포츠</a>
-              <span>⌃</span>
-              <ul>
+              <span className="ar-btn">⌃</span>
+              <ul className="side-menu-de">
                 <li>라이프스타일</li>
                 <li>러닝</li>
                 <li>트레이닝 및 짐</li>
@@ -50,8 +52,8 @@ const New = () => {
             </li>
             <li className="side-menu-list">
               <a href="#">키즈연령</a>
-              <span>⌃</span>
-              <ul>
+              <span className="ar-btn">⌃</span>
+              <ul className="side-menu-de">
                 <li>베이비(0-3세)</li>
                 <li>리틀키즈(3-7세)</li>
                 <li>주니어(7-15세)</li>
@@ -59,8 +61,8 @@ const New = () => {
             </li>
             <li className="side-menu-list">
               <a href="#">가격대</a>
-              <span>⌃</span>
-              <ul>
+              <span className="ar-btn">⌃</span>
+              <ul className="side-menu-de">
                 <li>0 ~ 50,000원</li>
                 <li>50,000 ~ 100,000원</li>
                 <li>100,000 ~ 150,000원</li>
@@ -69,8 +71,8 @@ const New = () => {
             </li>
             <li className="side-menu-list">
               <a href="#">색상</a>
-              <span>⌃</span>
-              <ul>
+              <span className="ar-btn">⌃</span>
+              <ul className="side-menu-de">
                 <li>퍼블</li>
                 <li>블랙</li>
                 <li>레드</li>
@@ -87,8 +89,8 @@ const New = () => {
             </li>
             <li className="side-menu-list">
               <a href="#">브랜드</a>
-              <span>⌃</span>
-              <ul>
+              <span className="ar-btn">⌃</span>
+              <ul className="side-menu-de">
                 <li>나이키 스포츠웨어</li>
                 <li>조던</li>
                 <li>NikeLab</li>
@@ -97,8 +99,8 @@ const New = () => {
             </li>
             <li className="side-menu-list">
               <a href="#">운동선수</a>
-              <span>⌃</span>
-              <ul>
+              <span className="ar-btn">⌃</span>
+              <ul className="side-menu-de">
                 <li>르브론 제임스</li>
                 <li>코비 브라이언트</li>
                 <li>자 모란트</li>
@@ -107,23 +109,23 @@ const New = () => {
             </li>
             <li className="side-menu-list">
               <a href="#">용도</a>
-              <span>⌃</span>
-              <ul>
+              <span className="ar-btn">⌃</span>
+              <ul className="side-menu-de">
                 <li>습한 날씨</li>
               </ul>
             </li>
             <li className="side-menu-list">
               <a href="#">추가 사이즈</a>
-              <span>⌃</span>
-              <ul>
+              <span className="ar-btn">⌃</span>
+              <ul className="side-menu-de">
                 <li>아시아 사이즈</li>
                 <li>US 사이즈</li>
               </ul>
             </li>
             <li className="side-menu-list">
               <a href="#">컬렉션</a>
-              <span>⌃</span>
-              <ul>
+              <span className="ar-btn">⌃</span>
+              <ul className="side-menu-de">
                 <li>윈드러너</li>
                 <li>티엠포</li>
                 <li>에어포스 1</li>
