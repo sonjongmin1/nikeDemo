@@ -32,7 +32,7 @@ function middleBar() {
       </header>
       <ul className="middleBar-hid">
         <li>
-          <a href="#">NEW</a>
+          <NavLink to={"/nikeDemo/new"}>New</NavLink>
           <ul>
             <li>새 학기 컬렉션</li>
             <li>Air Max</li>
@@ -41,9 +41,8 @@ function middleBar() {
           </ul>
         </li>
         <li>
-          <a href="#">MEN</a>
+          <NavLink to={"/nikeDemo/men"}>Men</NavLink>
           <ul>
-            <li>New</li>
             <li>신발</li>
             <li>의류</li>
             <li>용품</li>
@@ -51,9 +50,8 @@ function middleBar() {
           </ul>
         </li>
         <li>
-          <a href="#">WOMEN</a>
+          <NavLink to={"/nikeDemo/women"}>Women</NavLink>
           <ul>
-            <li>New</li>
             <li>신발</li>
             <li>의류</li>
             <li>용품</li>
@@ -61,9 +59,8 @@ function middleBar() {
           </ul>
         </li>
         <li>
-          <a href="#">KIDS</a>
+          <NavLink to={"/nikeDemo/kids"}>Kids</NavLink>
           <ul>
-            <li>New</li>
             <li>신발</li>
             <li>의류</li>
             <li>용품</li>
@@ -71,9 +68,8 @@ function middleBar() {
           </ul>
         </li>
         <li>
-          <a href="#">SALE</a>
+          <NavLink to={"/nikeDemo/sale"}>Sale</NavLink>
           <ul>
-            <li>Sale</li>
             <li>Men</li>
             <li>Women</li>
             <li>Kids</li>

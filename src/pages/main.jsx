@@ -10,7 +10,7 @@ const Main = () => {
   useMenuHid();
   btnslide();
   banner();
-  return (
+  return ( 
     <>
       <section className="main">
         <video autoPlay loop muted src={myVideo} />
