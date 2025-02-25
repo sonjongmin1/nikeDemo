@@ -5,6 +5,11 @@ $z: 0;
 @mixin bs {
   padding: 5px;
 }
+@mixin bgs {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 @mixin ep {
   font-size: 55px;
@@ -1137,6 +1142,10 @@ $z: 0;
   display: none;
 }
 
+.mb-me-modal {
+  display: none;
+}
+
 // 모바일
 @media (max-width: 768px) {
   .mb-br {
@@ -1180,7 +1189,9 @@ $z: 0;
       background-image: url("/img/iv-ic.svg");
     }
     .me-ic {
+      position: relative;
       background-image: url("/img/me-ic.svg");
+      z-index: 300;
     }
   }
 
@@ -1265,6 +1276,17 @@ $z: 0;
 
   .main-st6 {
     padding: 0;
+    #prev2 {
+      width: 35px;
+      height: 35px;
+      right: 60px;
+    }
+
+    #next2 {
+      width: 35px;
+      height: 35px;
+      right: 10px;
+    }
   }
 
   .main {
@@ -1495,6 +1517,73 @@ $z: 0;
     }
     div:first-child {
       margin-right: 30px;
+    }
+  }
+
+  // 모바일 메뉴 모달 구현
+  .mb-me-modal {
+    display: flex;
+    position: absolute;
+    justify-content: end;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 1.5s;
+    opacity: 0;
+
+    .mb-me {
+      width: 0%;
+      height: 100vh;
+      background-color: #fff;
+      z-index: 1000;
+      padding: 10px;
+      transition: 0.5s;
+      opacity: 0;
+    }
+    .mb-btn {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      height: 50px;
+      .mb-cl {
+        position: relative;
+        bottom: 5px;
+        right: 11px;
+        width: 40px;
+        height: 40px;
+        background-image: url("/public/img/close-ic.svg");
+        @include bgs;
+      }
+    }
+    ul {
+      padding: 50px 20px 50px 20px;
+      li {
+        display: flex;
+        justify-content: space-between;
+        font-size: 36px;
+        font-weight: 400;
+        padding: 30px 0px 30px 0;
+
+        span {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+  .mb-me-modal.on {
+    opacity: 1;
+
+    .mb-me {
+      position: relative;
+      z-index: 500;
+      width: 85%;
+      height: 100vh;
+      background-color: rgb(229, 229, 229);
+      z-index: 1000;
+      padding: 10px;
+      opacity: 1;
     }
   }
 } // --
