@@ -1,11 +1,16 @@
+import useMbSlide from "../../js/mbslide.jsx";
+
 const Footer = () => {
+  useMbSlide();
   return (
     <>
       <footer className="main-ft">
         <ul>
           <li>
-            <a href="#">Featured</a>
-            <ul>
+            <a className="ft-a" href="#">
+              Featured
+            </a>
+            <ul className="ft-menu">
               <li>에어 포스1</li>
               <li>코르테즈</li>
               <li>나이키 C1TY</li>
@@ -13,8 +18,10 @@ const Footer = () => {
             </ul>
           </li>
           <li>
-            <a href="#">신발</a>
-            <ul>
+            <a className="ft-a" href="#">
+              신발
+            </a>
+            <ul className="ft-menu">
               <li>전체 보기</li>
               <li>러닝</li>
               <li>농구</li>
@@ -22,8 +29,10 @@ const Footer = () => {
             </ul>
           </li>
           <li>
-            <a href="#">의류</a>
-            <ul>
+            <a className="ft-a" href="#">
+              의류
+            </a>
+            <ul className="ft-menu">
               <li>전체 보기</li>
               <li>재킷 & 베스트</li>
               <li>후디 & 크루</li>
@@ -31,8 +40,10 @@ const Footer = () => {
             </ul>
           </li>
           <li>
-            <a href="#">Kids</a>
-            <ul>
+            <a className="ft-a" href="#">
+              Kids
+            </a>
+            <ul className="ft-menu">
               <li>베이비 신발</li>
               <li>키즈 신발</li>
               <li>키즈 러닝 신발</li>
@@ -46,24 +57,30 @@ const Footer = () => {
         <div className="main-ft2-ln-bt"></div>
         <ul>
           <li>
-            <a href="#">안내</a>
-            <ul>
+            <a className="ft-a2" href="#">
+              안내
+            </a>
+            <ul className="ft-menu2">
               <li>멤버가입</li>
               <li>매장찾기</li>
               <li>나이키 저널</li>
             </ul>
           </li>
           <li>
-            <a href="#">멤버 혜택</a>
-            <ul>
+            <a className="ft-a2" href="#">
+              멤버 혜택
+            </a>
+            <ul className="ft-menu2">
               <li>웰컴 쿠폰</li>
               <li>생일 쿠폰</li>
               <li>학생 할인 쿠폰</li>
             </ul>
           </li>
           <li>
-            <a href="#">고객센터</a>
-            <ul>
+            <a className="ft-a2" href="#">
+              고객센터
+            </a>
+            <ul className="ft-menu2">
               <li>주문배송조회</li>
               <li>반품 정책</li>
               <li>결제 방법</li>
@@ -72,8 +89,10 @@ const Footer = () => {
             </ul>
           </li>
           <li>
-            <a href="#">회사소개</a>
-            <ul>
+            <a className="ft-a2" href="#">
+              회사소개
+            </a>
+            <ul className="ft-menu2">
               <li>About Nike</li>
               <li>소식</li>
               <li>채용</li>
@@ -84,8 +103,8 @@ const Footer = () => {
           </li>
         </ul>
         <div className="ft-ic-box">
-          <div className="earth-ic"></div>
-          <div className="kr">대한민국</div>
+          <div className="earth-ic de-h"></div>
+          <div className="kr de-h">대한민국</div>
         </div>
         <div>
           <div className="ft-con">
@@ -95,8 +114,10 @@ const Footer = () => {
             <p>
               <a href="#">이용약관</a>
             </p>
-            <p>
-              <a href="#">개인정보처리방침</a>
+            <p className="tw">
+              <a href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=privacy-policy&uxId=default&country=KR&language=ko&requestType=redirect">
+                개인정보처리방침
+              </a>
             </p>
             <p>
               <a href="#">위치정보이용약관</a>
@@ -110,14 +131,15 @@ const Footer = () => {
       <footer className="main-ft3">
         <div>
           <p>
-            (유)나이키코리아 대표 Kimberlee Lynn Chang Mendes, 킴벌리 린 창
-            멘데스 서울 강남구 테헤란로 152 강남파이낸스센터 30층 <br />|
-            통신판매업신고번호
+            (유)나이키코리아 대표 Kimberlee Lynn Chang Mendes,
+            <br className="mb-br" /> 킴벌리 린 창 멘데스 서울 강남구 테헤란로
+            152 강남파이낸스센터 30층 <br />| 통신판매업신고번호
           </p>
           <p>2011-서울강남-03461 | 등록번호 220-88-09068 사업자 정보 확인</p>
           <p>
-            고객센터 전화 문의 080-022-0182 FAX 02-6744-5880 | 이메일
-            service@nike.co.kr | 호스팅서비스사업자 (유)나이키코리아
+            고객센터 전화 문의 080-022-0182 FAX 02-6744-5880 |
+            <br className="mb-br" />
+            이메일 service@nike.co.kr | 호스팅서비스사업자 (유)나이키코리아
           </p>
         </div>
         <div>

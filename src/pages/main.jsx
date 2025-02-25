@@ -10,19 +10,24 @@ const Main = () => {
   useMenuHid();
   btnslide();
   banner();
-  return ( 
+  return (
     <>
       <section className="main">
         <video autoPlay loop muted src={myVideo} />
         <div className="main-box1">
           <div className="main-bs">새로운 시작을 위한 완벽한 준비</div>
-          <div className="main-ep">새 학기, 더 나은 시작</div>
-          <div>
-            운동장에서 교실까지, 나이키와 함께 빛나는 새 학기를 시작해 보세요.
+          <div className="main-ep">
+            새 학기, <br className="mb-br" />더 나은 시작
           </div>
-          <div className="main-bs">
-            3.2(일)까지 제공되는 특별한 할인 혜택과 함께 완벽한 새 학기 준비를
-            위한 아이템을 만나보세요
+          <div className="mb-ln">
+            운동장에서 교실까지, 나이키와 함께
+            <br className="mb-br" /> 빛나는 새 학기를 시작해 보세요.
+          </div>
+          <div className="main-bs mb-ln">
+            3.2(일)까지 제공되는 특별한 할인
+            <br className="mb-br" /> 혜택과 함께 완벽한 새 학기 준비를 위한
+            <br className="mb-br" />
+            아이템을 만나보세요
           </div>
           <div className="main-col">
             <div>대학생 새 학기 컬렉션</div>
@@ -89,10 +94,11 @@ const Main = () => {
         <div className="main-box1">
           <div className="main-bs">나이키 모티바</div>
           <div className="main-ep">최상의 쿠셔닝</div>
-          <div>걷는 순간, 최상의 편안함을 경험해보세요.</div>
-          <div className="main-bs">
-            뛰어난 쿠셔닝과 혁신적인 컴포트그루브 기술이 충격을 흡수하여, 과감한
-            로커 디자인이 탁월한 추진력을 선사합니다.
+          <div className="mb-ln">걷는 순간, 최상의 편안함을 경험해보세요.</div>
+          <div className="main-bs mb-ln">
+            뛰어난 쿠셔닝과 혁신적인 컴포트그루브 기술이
+            <br className="mb-br" /> 충격을 흡수하여, 과감한 로커 디자인이
+            탁월한 추진력을 선사합니다.
           </div>
           <div className="st1-main-btn">알림 받기</div>
         </div>
@@ -150,3 +156,4 @@ const Main = () => {
 };
 
 export default Main;
+ 
