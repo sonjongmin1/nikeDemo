@@ -1632,10 +1632,20 @@ $z: 0;
     width: 100%;
   }
 
+  .men-st3,
+  .women-st3 {
+    margin-left: 0;
+  }
+
   // new
   .new .pd-box {
     display: flex;
     padding: 0;
+  }
+
+  .men-st3,
+  .women-st3 {
+    margin-left: 0;
   }
 
   .pd-box-1 {
