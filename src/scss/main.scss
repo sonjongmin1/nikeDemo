@@ -1601,4 +1601,34 @@ $z: 0;
   .main-st4 {
     display: none;
   }
+
+  .middleBar-hid.on {
+    display: none;
+  }
+
+  // men
+
+  .mw-menu {
+    padding: 20px;
+  }
+
+  .mw-menu ul {
+    display: none;
+  }
+
+  .men-main {
+    height: 250px;
+  }
+
+  .men-st3 video {
+    width: 100%;
+  }
+
+  .women-main {
+    height: 250px;
+  }
+
+  .women-st3 video {
+    width: 100%;
+  }
 } // --
