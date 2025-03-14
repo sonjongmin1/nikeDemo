@@ -4,8 +4,10 @@ import WomenVideo2 from "../video/sub-vid3.mp4";
 import Footer from "../component/footer/footer";
 import banner from "../js/bannerjs.jsx";
 import Banner from "../component/banner/banner";
+import BtnSlide from "../js/slide.jsx";
 const Women = () => {
   banner();
+  BtnSlide();
   return (
     <>
       <WomenMenu />
@@ -60,8 +62,8 @@ const Women = () => {
       <section className="main-st2">
         <div>
           <span className="main-st2-tit">Trending Now</span>
-          <button id="prev3">〈</button>
-          <button id="next3">〉</button>
+          <button id="prev">〈</button>
+          <button id="next">〉</button>
         </div>
         <div className="card-img-box">
           <div className="main-img1">

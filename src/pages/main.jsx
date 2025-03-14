@@ -1,14 +1,14 @@
 import myVideo from "../video/main-vid1.mp4";
 import myVideo2 from "../video/main-vid2.mp4";
 import useMenuHid from "../js/menu.jsx";
-import btnslide from "../js/slide.jsx";
+import BtnSlide from "../js/slide.jsx";
 import banner from "../js/bannerjs.jsx";
 import Banner from "../component/banner/banner.jsx";
 import Footer from "../component/footer/footer.jsx";
 
 const Main = () => {
   useMenuHid();
-  btnslide();
+  BtnSlide();
   banner();
   return (
     <>

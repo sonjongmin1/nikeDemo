@@ -7,6 +7,7 @@ import banner from "../js/bannerjs.jsx";
 
 const Kids = () => {
   banner();
+
   return (
     <>
       <KidsMenu />
