@@ -7,8 +7,15 @@ header {
   background-color: rgb(245, 245, 245);
 }
 
+.topBar {
+  position: relative;
+  z-index: 1000;
+}
+
 .topBarLogo {
+  position: relative;
   display: flex;
+  z-index: 1000;
 }
 
 .topBarLogo .topBarLogo div > img {

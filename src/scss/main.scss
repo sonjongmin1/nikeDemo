@@ -1190,7 +1190,7 @@ $z: 0;
     .me-ic {
       position: relative;
       background-image: url("/img/me-ic.svg");
-      z-index: 300;
+      z-index: 1000;
     }
   }
 
@@ -1585,5 +1585,9 @@ $z: 0;
       padding: 10px;
       opacity: 1;
     }
+  }
+
+  .side-menu {
+    display: none;
   }
 } // --

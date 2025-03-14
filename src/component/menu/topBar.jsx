@@ -62,25 +62,25 @@ function TopBar() {
             <div className="mb-cl"></div>
           </div>
           <ul>
-            <li>
+            <li className="mb-me-modal-list">
               <NavLink to={"/nikeDemo/new"}>
                 <span>NEW</span>
                 <span>〉</span>
               </NavLink>
             </li>
-            <li>
+            <li className="mb-me-modal-list">
               <NavLink to={"/nikeDemo/men"}>
                 <span>MEN</span>
                 <span>〉</span>
               </NavLink>
             </li>
-            <li>
+            <li className="mb-me-modal-list">
               <NavLink to={"/nikeDemo/women"}>
                 <span>WOMEN</span>
                 <span>〉</span>
               </NavLink>
             </li>
-            <li>
+            <li className="mb-me-modal-list">
               <NavLink to={"/nikeDemo/kids"}>
                 <span>KIDS</span>
                 <span>〉</span>
