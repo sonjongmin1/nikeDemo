@@ -1631,4 +1631,15 @@ $z: 0;
   .women-st3 video {
     width: 100%;
   }
+
+  // new
+  .new .pd-box {
+    display: flex;
+    padding: 0;
+  }
+
+  .pd-box-1 {
+    display: flex;
+    justify-content: center !important;
+  }
 } // --
