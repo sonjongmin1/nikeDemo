@@ -1652,4 +1652,38 @@ $z: 0;
     display: flex;
     justify-content: center !important;
   }
+
+  // kids
+
+  .kids-st6 {
+    padding: 0;
+  }
+
+  .kids-st7 {
+    padding: 0;
+  }
+
+  .kids-st6 ul li:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .kids-st6 ul {
+    height: auto;
+  }
+
+  .kids-st7 #prev2 {
+    width: 35px;
+    height: 35px;
+    right: 60px;
+  }
+
+  .kids-st7 #next2 {
+    width: 35px;
+    height: 35px;
+    right: 10px;
+  }
+
+  .kids-st6 ul li {
+    height: 200px;
+  }
 } // --
