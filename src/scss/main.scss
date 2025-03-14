@@ -286,12 +286,10 @@ $z: 0;
     }
 
     div:first-child {
-      width: 100%;
       margin-right: 15px;
       background-image: url("/img/main-st4-img1.png");
     }
     div:nth-child(2) {
-      width: 100%;
       background-image: url("/img/main-st4-img2.png");
     }
   }
@@ -1521,7 +1519,12 @@ $z: 0;
   }
 
   // 모바일 메뉴 모달 구현
+
   .mb-me-modal {
+    display: none;
+  }
+
+  .mb-me-modal.on {
     display: flex;
     position: absolute;
     justify-content: end;
@@ -1588,6 +1591,14 @@ $z: 0;
   }
 
   .side-menu {
+    display: none;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .main-st4 {
     display: none;
   }
 } // --

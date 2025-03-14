@@ -10,16 +10,19 @@ const menubtn = () => {
     menuIc.addEventListener("click", function () {
       mbMenuModal.classList.add("on");
       menuIc.style.display = "none";
+      body.style.overflow = "hidden";
     });
     mbMenuIc.addEventListener("click", function () {
       mbMenuModal.classList.remove("on");
       menuIc.style.display = "block";
+      body.style.overflow = "";
     });
 
     mbMeModalList.forEach((item) => {
       item.addEventListener("click", function () {
         mbMenuModal.classList.remove("on");
         menuIc.style.display = "block";
+        body.style.overflow = "";
       });
     });
   }, []);
