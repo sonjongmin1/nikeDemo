@@ -40,10 +40,6 @@ td {
 }
 
 @media (max-width: 768px) {
-  * {
-    overflow-x: hidden;
-  }
-
   .main-st5 {
     display: none;
   }
