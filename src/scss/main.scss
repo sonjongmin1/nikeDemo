@@ -17,6 +17,11 @@ $z: 0;
   padding: 10px;
 }
 
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
 .main-intro {
   text-align: center;
   padding: 15px 0px;
@@ -266,6 +271,7 @@ $z: 0;
 }
 
 .main-st4 {
+  width: 100%;
   padding: 40px 80px 80px 80px;
   margin-bottom: 80px;
   .main-st4-tit {
@@ -274,22 +280,26 @@ $z: 0;
   }
 
   .card-st4-box {
+    width: 100%;
+    height: 50%;
     display: flex;
     justify-content: space-between;
 
     div {
-      width: 620px;
-      height: 320px;
+      width: 100%;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
     }
 
     div:first-child {
+      aspect-ratio: 1.90286 / 1;
       margin-right: 15px;
       background-image: url("/img/main-st4-img1.png");
     }
     div:nth-child(2) {
+      aspect-ratio: 1.90286 / 1;
+      margin-right: 0;
       background-image: url("/img/main-st4-img2.png");
     }
   }
